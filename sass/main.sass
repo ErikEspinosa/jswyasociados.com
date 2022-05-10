@@ -1,8 +1,24 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Sans+Pro:wght@300;400;700&display=swap')
 
-// Breakpoints
+// Mixins
+@mixin transition()
+    transition: all 0.4s
 
+@mixin button()
+    display: inline-block
+    background-color: transparent
+    font-family: 'Merriweather', serif
+    text-transform: uppercase
+    letter-spacing: 0.3rem
+    padding: 0.75rem 3rem
+    @include transition()
+
+// Breakpoints
+$mobile: 500px
+$tablet: 1024px
+$laptop: 1336px
+$desktop: 1920px
     
 // Colors
 $primary: rgb(13, 37, 128)
@@ -14,18 +30,19 @@ $gray-light: rgb(249, 249, 249)
 
 // Components
 .button-primary
-    display: inline-block
-    font-family: 'Merriweather', serif
-    text-transform: uppercase
-    letter-spacing: 0.3rem
+    @include button()
     color: $white
-    padding: 0.75rem 3rem
     border: 1px solid $white
-    transition: all 0.4s
     &:hover
+        background-color: $white
+        color: $primary
+.button-secondary
+    @include button()
+    color: $primary
+    border: 1px solid $primary
+    &:hover
+        background-color: $primary
         color: $white
-        box-shadow: 0px 0px 30px 0px rgba($white, 0.5)
-        letter-spacing: 0.35rem
 
 body
     font-family: 'Source Sans Pro', sans-serif
@@ -33,6 +50,32 @@ h1, h2, h3, h4, h5, h6
     font-family: 'Merriweather', serif
 a
     text-decoration: none
+p
+    line-height: 1.6rem
+
+
+.navbar
+    .navbar-brand
+        img
+            max-height: 40px
+            @include transition()
+            &:hover
+                transform: translateX(5px)
+            @media screen and ( max-width: $mobile )
+                max-height: 30px
+    .navbar-nav
+        a
+            color: $primary
+            font-size: 14px
+            text-transform: uppercase
+            transition: all 0.4s
+            &:hover
+                color: $accent
+    .navbar-toggler
+        &:focus
+            box-shadow: none
+        .navbar-toggler-icon
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(179, 66, 5, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 
 .hero
     position: relative
@@ -59,12 +102,234 @@ a
         font-size: 20px
         letter-spacing: 0.5rem
         margin-bottom: 2rem
+        @media screen and ( max-width: $mobile )
+            font-size: 14px
     h1
         font-size: 36px
+        max-width: 70%
+        margin: 0 auto
         margin-bottom: 2rem
+        @media screen and ( max-width: $mobile )
+            font-size: 28px
+            max-width: 100%
     p
         max-width: 70%
-        line-height: 1.6rem
         margin: 0 auto
         margin-bottom: 4rem
-        @media screen and (width: )
+        @media screen and ( max-width: $mobile )
+            max-width: 100%
+            margin-bottom: 2rem
+
+.quienes-somos
+    padding: 4rem 0
+    h2
+        color: $accent
+        font-size: 36px
+        text-align: center
+        text-transform: uppercase
+        margin-bottom: 2rem
+    p
+        color: $primary
+    p.intro
+        text-align: center
+        max-width: 70%
+        margin: 0 auto
+        margin-bottom: 1rem
+        @media screen and ( max-width: $mobile )
+            max-width: 100%
+    p.detail
+        margin-bottom: 3rem
+    hr
+        width: 10%
+        height: 2px
+        background-color: $primary
+        margin: 2rem auto 3rem auto
+        border: none
+    img
+        width: 100%
+        @media screen and ( max-width: $mobile )
+            margin-bottom: 2rem
+    .buttons
+        @media screen and ( max-width: $mobile )
+            text-align: center
+
+.acerca-de-nosotros
+    padding: 4rem 0
+    h2
+        color: $accent
+        font-size: 36px
+        text-align: center
+        text-transform: uppercase
+        margin-bottom: 2rem
+    .about-cards
+        margin-bottom: 3rem
+    .buttons
+        text-align: center
+    .about-card
+        display: flex
+        margin: 1rem
+        .icon
+            img
+                margin-right: 1rem
+        h3
+            font-size: 20px
+            color: $primary
+            text-transform: uppercase
+
+.sector-publico-y-privado
+    background-color: $gray-light
+    padding: 4rem 0
+    h2
+        color: $accent
+        font-size: 36px
+        text-align: center
+        text-transform: uppercase
+        margin-bottom: 2rem
+    .sector-cards.blue
+        .icon
+            background-color: $primary
+    .sector-cards.orange
+        .icon
+            background-color: $accent
+    .sector-card
+        display: flex
+        margin-bottom: 1rem
+        .space
+            min-width: 100px
+            height: 100px
+            text-align: right
+            @media screen and ( max-width: $mobile )
+                display: none
+        .line
+            min-width: 100px
+            height: 100px
+            text-align: right
+            @media screen and ( max-width: $mobile )
+                display: none
+        .icon
+            display: flex
+            justify-content: center
+            align-items: center
+            min-width: 100px
+            height: 100px
+        .content
+            display: flex
+            align-items: center
+            background-color: $white
+            font-size: 20px
+            width: 100%
+            padding-left: 1rem
+
+.marketing-politico
+    padding: 4rem 0
+    h2
+        color: $accent
+        font-size: 36px
+        text-align: center
+        text-transform: uppercase
+        margin-bottom: 2rem
+    .marketing-card
+        display: flex
+        margin: 1rem
+        h3
+            font-family: 'Source Sans Pro', sans-serif
+            font-size: 20px
+            font-weight: bold
+        .icon
+            display: flex
+            justify-content: center
+            align-items: center
+            min-width: 100px
+            height: 100px
+            margin-right: 1rem
+        .blue
+            background-color: $primary
+        .orange
+            background-color: $accent
+
+.cursos-y-entrenamientos
+    background-color: $gray-light
+    padding: 4rem 0
+    h2
+        color: $accent
+        font-size: 36px
+        text-align: center
+        text-transform: uppercase
+        margin-bottom: 2rem
+    .cursos-card
+        display: flex
+        background-color: $white
+        margin: 1rem
+        min-height: 170px
+        h3
+            font-family: 'Source Sans Pro', sans-serif
+            font-size: 26px
+        .icon
+            display: flex
+            justify-content: center
+            align-items: center
+            margin-right: 1rem
+        .blue
+            background-color: rgba($primary, 0.1)
+        .orange
+            background-color: rgba($accent, 0.1)
+        .content
+            display: flex
+            align-items: center
+
+.footer
+    background-color: $primary
+    color: $white
+    padding: 4rem 0 0 0
+    h2
+        font-size: 36px
+        text-align: center
+        text-transform: uppercase
+        margin-bottom: 2rem
+    form
+        max-width: 60%
+        margin: 0 auto
+        margin-bottom: 10rem
+        @media screen and ( max-width: $mobile )
+            max-width: 100%
+        input
+            display: block
+            width: 100%
+            background-color: transparent
+            color: $white
+            border: 1px solid $white
+            padding: 0.8rem
+            margin-bottom: 2rem
+            &::placeholder
+                color: rgba($white, 0.5)
+        .buttons
+            text-align: center
+    .links
+        margin-bottom: 3rem
+        h3
+            font-size: 16px
+            margin-bottom: 1rem
+        ul
+            list-style: none
+            margin: 0
+            padding: 0
+            @media screen and ( max-width: $mobile )
+                margin-bottom: 2rem
+            li
+                display: flex
+                color: $white
+                margin-bottom: 0.5rem
+                .icon
+                    margin-right: 1rem
+                a
+                    @include transition()
+                    color: $white
+                    &:hover
+                        color: $accent
+    .copyright
+        background-color: $secondary
+        padding: 2rem 0
+        p
+            font-size: 12px
+        .icon
+            margin: 0 1rem

@@ -10,14 +10,16 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a href="/" class="navbar-brand">JWS</a>
+            <a href="/" class="navbar-brand">
+                <img src="./assets/logo.jpg" alt="JSW Y Asociados">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
                     <li class="nav-item">
                         <a href="#inicio" class="nav-link active" aria-current="page">Inicio</a>
                     </li>
@@ -30,13 +32,16 @@
                     <li class="nav-item">
                         <a href="#que-ofrecemos" class="nav-link">Qué ofrecemos</a>
                     </li>
+                    <li class="nav-item">
+                        <a href="#contacto" class="nav-link">Contacto</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Hero -->
-    <div class="hero">
+    <div id="inicio" class="hero">
         <div class="overlay"></div>
         <div class="content">
             <div class="container text-center">
@@ -51,16 +56,422 @@
     <!-- Quienes somos -->
     <div id="quienes-somos" class="quienes-somos">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col">
-                    <h2>Quienes somos</h2>
-                    <p>Somos un equipo de expertos en materia legal, fiscal, contable y administrativa cuyo objetivo es brindar a nuestros clientes alternativas y soluciones eficientes ante los retor que enfrentan.</p>
-                    <p>Analizamos de manera integral e implementamos las mejores prácticas innovando y haciendo uso de a tecnología que de manera estratégica se adapten y/o resuelvan cada caso.</p>
+            <h2>Quienes somos</h2>
+            <p class="intro">Somos un equipo de expertos en materia legal, fiscal, contable y administrativa cuyo objetivo es brindar a nuestros clientes alternativas y soluciones eficientes ante los retor que enfrentan.</p>
+            <p class="intro">Analizamos de manera integral e implementamos las mejores prácticas innovando y haciendo uso de a tecnología que de manera estratégica se adapten y/o resuelvan cada caso.</p>
+            <hr>
+            <div class="row">
+                <div class="col-sm">
+                    <img src="./assets/quienes-somos.jpg" alt="Quienes somos">
+                </div>
+                <div class="col-sm">
+                    <p class="detail">En JSW y asociados conocemos la complejidad legal, normativa y de operación  que tanto el sector público como privado desafían día con día, es por ello que la solidez y seriedad de nuestra firma les asegura resultados satisfactorios.</p>
+                    <div class="buttons">
+                        <a href="#acerca-de-nosotros" class="button-secondary">Saber más</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Acerca de nosotros -->
+    <div id="acerca-de-nosotros" class="acerca-de-nosotros">
+        <div class="container">
+            <h2>Acerca de nosotros</h2>
+            <div class="row about-cards">
+                <div class="col-sm-6">
+                    <div class="about-card">
+                        <div class="icon">
+                            <img src="./assets/innovacion.png" alt="Innovación">
+                        </div>
+                        <div class="content">
+                            <h3>INNOVACIÓN</h3>
+                            <p>Tenemos compromiso de estar en constante actualización de las leyes y normativas, que nos permitan ofrecer a nuestros clientes nuevas estrategias o bien adaptar a las ya existentes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="about-card">
+                        <div class="icon">
+                            <img src="./assets/confidencialidad.png" alt="Confidencialidad">
+                        </div>
+                        <div class="content">
+                            <h3>CONFIDENCIALIDAD</h3>
+                            <p>Al contratar los servicios nuestros clientes tienen la confianza de que su información será tratada con absoluta confidencialidad a través de la firma de un convenio que restringe la divulgación por parte de nuetro despacho.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="about-card">
+                        <div class="icon">
+                            <img src="./assets/trabajo-en-equipo.png" alt="Trabajo en equipo" srcset="">
+                        </div>
+                        <div class="content">
+                            <h3>TRABAJO EN EQUIPO</h3>
+                            <p>Mediante la integración de equipos multidisciplinarios se establecen las estrategias y procedimientos, previos análisis de la situación particular de cada cliente lo que nos permite brindar una asesoría personalizada y específica para cada uno.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="about-card">
+                        <div class="icon">
+                            <img src="./assets/certeza.png" alt="Certeza">
+                        </div>
+                        <div class="content">
+                            <h3>CERTEZA</h3>
+                            <p>Cualquier diseño de estrategia que ofrecemos invariablemente se encuentra soportada por el marco legal correspondiente, así como de un análisis de costos y consecuencias que permita a nuestros clientes tomar la mejor decisión para su negocio.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <a href="#que-ofrecemos" class="button-secondary">Servicios</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sector público y privado -->
+    <div id="que-ofrecemos" class="sector-publico-y-privado">
+        <div class="container">
+            <h2>SECTOR PÚBLICO Y PRIVADO</h2>
+            <div class="sector-cards blue">
+                <div class="sector-card">
+                    <div class="icon">
+                        <img src="./assets/licitaciones.png" alt="Licitaciones">
+                    </div>
+                    <div class="content">
+                        LICITACIONES
+                    </div>
+                </div>
+                <div class="sector-card">
+                    <div class="line">
+                        <img src="./assets/line.png" alt="Conexión">
+                    </div>
+                    <div class="icon">
+                        <img src="./assets/auditorias.png" alt="Auditorias Preventivas">
+                    </div>
+                    <div class="content">
+                        AUDITORÍAS PREVENTIVAS
+                    </div>
+                </div>
+                <div class="sector-card">
+                    <div class="space"></div>
+                    <div class="line">
+                        <img src="./assets/line.png" alt="Conexión">
+                    </div>
+                    <div class="icon">
+                        <img src="./assets/dictaminacion.png" alt="Dictaminación del ISR">
+                    </div>
+                    <div class="content">
+                        DICTAMINACIÓN DEL IMPUESTO SOBRE EROGACIONES POR REMUNERACIONES AL TRABAJO PERSONAL
+                    </div>
+                </div>
+                <div class="sector-card">
+                    <div class="space"></div>
+                    <div class="space"></div>
+                    <div class="line">
+                        <img src="./assets/line.png" alt="Conexión">
+                    </div>
+                    <div class="icon">
+                        <img src="./assets/asesoria.png" alt="Asesoría Legal">
+                    </div>
+                    <div class="content">
+                        ASESORÍA LEGAL, LABORAL, FISCAL, CONTABLE
+                    </div>
+                </div>
+                <div class="sector-card">
+                    <div class="space"></div>
+                    <div class="space"></div>
+                    <div class="space"></div>
+                    <div class="line">
+                        <img src="./assets/line.png" alt="Conexión">
+                    </div>
+                    <div class="icon">
+                        <img src="./assets/automatizacion.png" alt="Automatización de Procesos">
+                    </div>
+                    <div class="content">
+                        AUTOMATIZACIÓN DE PROCESOS
+                    </div>
+                </div>
+            </div>
+            <div class="sector-cards orange">
+                <div class="sector-card">
+                    <div class="icon">
+                        <img src="./assets/analisis.png" alt="Análisis de Costos">
+                    </div>
+                    <div class="content">
+                        ANÁLISIS DE COSTOS DE SERVICIOS PROFESIONALES
+                    </div>
+                </div>
+                <div class="sector-card">
+                    <div class="line">
+                        <img src="./assets/line-orange.png" alt="Conexión">
+                    </div>
+                    <div class="icon">
+                        <img src="./assets/solventacion.png" alt="Solventación de Observaciones">
+                    </div>
+                    <div class="content">
+                        SOLVENTACIÓN DE OBSERVACIONES ANTE ÓRGANOS DE FISCALIZACIÓN
+                    </div>
+                </div>
+                <div class="sector-card">
+                    <div class="space"></div>
+                    <div class="line">
+                        <img src="./assets/line-orange.png" alt="Conexión">
+                    </div>
+                    <div class="icon">
+                        <img src="./assets/dictaminacion-cuotas.png" alt="Dictaminación de Cuotas">
+                    </div>
+                    <div class="content">
+                        DICTAMINACIÓN DE CUOTAS OBRERO PATRONALES ANTE IMSS
+                    </div>
+                </div>
+                <div class="sector-card">
+                    <div class="space"></div>
+                    <div class="space"></div>
+                    <div class="line">
+                        <img src="./assets/line-orange.png" alt="Conexión">
+                    </div>
+                    <div class="icon">
+                        <img src="./assets/asesoria-politica.png" alt="Asesoría Política">
+                    </div>
+                    <div class="content">
+                        ASESORÍA POLÍTICA ELECTORAL
+                    </div>
+                </div>
+                <div class="sector-card">
+                    <div class="space"></div>
+                    <div class="space"></div>
+                    <div class="space"></div>
+                    <div class="line">
+                        <img src="./assets/line-orange.png" alt="Conexión">
+                    </div>
+                    <div class="icon">
+                        <img src="./assets/disenio.png" alt="Diseño de Procesos">
+                    </div>
+                    <div class="content">
+                        DISEÑO Y ADMINSITRACIÓN DE SITIOS WEB
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Marketing político -->
+    <div class="marketing-politico">
+        <div class="container">
+            <h2>Marketing Político</h2>
+            <div class="row marketing-cards">
+                <div class="col-sm-6">
+                    <div class="marketing-card">
+                        <div class="icon blue">
+                            <img src="./assets/marca-politica.png" alt="Marca Política">
+                        </div>
+                        <div class="content">
+                            <h3>MARCA POLÍTICA</h3>
+                            <p>Generamos valor para diferenciarse de sus oponentes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="marketing-card">
+                        <div class="icon orange">
+                            <img src="./assets/plan-de-marketing-digital.png" alt="Plan de Marketing Digital">
+                        </div>
+                        <div class="content">
+                            <h3>PLAN DE MARKETING DIGITAL</h3>
+                            <p>Planificamos estrategias y acciones de marketing, con el fin de alcanzar los objetivos planeados por el gobierno o campaña política.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="marketing-card">
+                        <div class="icon blue">
+                            <img src="./assets/plan-de-comunicacion.png" alt="Plan de Comunicación">
+                        </div>
+                        <div class="content">
+                            <h3>PLAN DE COMUNICACIÓN</h3>
+                            <p>Planeamos la comunicacion en forma integral, estableciendo objetivos, temas, mensajes, campañas y acciones para los públicos internos y externos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="marketing-card">
+                        <div class="icon orange">
+                            <img src="./assets/gestion-de-redes-sociales.png" alt="Gestión de Redes Sociales">
+                        </div>
+                        <div class="content">
+                            <h3>GESTIÓN DE REDES SOCIALES</h3>
+                            <p>Planeamos estrategias para una mejor gestión de redes sociales, que ayuden a posicionar la marca política o de gobierno.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="marketing-card">
+                        <div class="icon blue">
+                            <img src="./assets/manejo-de-crisis.png" alt="Manejo de Crisis">
+                        </div>
+                        <div class="content">
+                            <h3>MANEJO DE CRISIS</h3>
+                            <p>Proponemos estrategias para prevenir y gestionar las crisis, cuidando no poner en riesgo la reputación gubernamental.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="marketing-card">
+                        <div class="icon orange">
+                            <img src="./assets/campanias-publicitarias.png" alt="Campañas Publicitarias">
+                        </div>
+                        <div class="content">
+                            <h3>CAMPAÑAS PUBLICITARIAS</h3>
+                            <p>Diseñamos campañas publicitarias con el fin de difundir alguna acción, servicio del gobierno o bien potencializar su imagen.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cursos y entrenamientos -->
+    <div class="cursos-y-entrenamientos">
+        <div class="container">
+            <h2>Cursos y entrenamientos</h2>
+            <div class="row cursos-cards">
+                <div class="col-sm-6">
+                    <div class="cursos-card">
+                        <div class="icon blue">
+                            <img src="./assets/marca-personal-politica.jpg" alt="Marca Personal Política">
+                        </div>
+                        <div class="content">
+                            <h3>MARCA PERSONAL POLÍTICA</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="cursos-card">
+                        <div class="icon orange">
+                            <img src="./assets/gestion-de-crisis.jpg" alt="Gestión de Crisis">
+                        </div>
+                        <div class="content">
+                            <h3>GESTIÓN DE CRISIS</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="cursos-card">
+                        <div class="icon blue">
+                            <img src="./assets/manejo-estrategico-de-redes-sociales.jpg" alt="Manejo Estratégico de Redes Sociales">
+                        </div>
+                        <div class="content">
+                            <h3>MANEJO ESTRATEGICO DE REDES SOCIALES</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="cursos-card">
+                        <div class="icon orange">
+                            <img src="./assets/media-training.jpg" alt="Media Training">
+                        </div>
+                        <div class="content">
+                            <h3>MEDIA TRAINING</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contacto" class="footer">
+        <div class="container">
+            <h2>Contacto</h2>
+            <form action="#">
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Teléfono">
+                <input type="text" placeholder="Correo electrónico">
+                <input type="text" placeholder="Mensaje">
+                <div class="buttons">
+                    <button type="submit" class="button-primary">Enviar mensaje</button>
+                </div>
+            </form>
+            <div class="links">
+                <div class="row row-cols-2 row-cols-sm-4">
+                    <div class="col">
+                        <h3>SITIO</h3>
+                        <ul>
+                            <li><a href="#inicio">Inicio</a></li>
+                            <li><a href="#quienes-somos">Quienes somos</a></li>
+                            <li><a href="#acerca-de-nosotros">Acerca de nosotros</a></li>
+                            <li><a href="#que-ofrecemos">Qué ofrecemos</a></li>
+                            <li><a href="#contacto">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>SOCIAL</h3>
+                        <ul>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Linkedin</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>LEGAL</h3>
+                        <ul>
+                            <li><a href="#">Aviso de privacidad</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul>
+                            <li>
+                                <div class="icon">
+                                    <img src="./assets/location.png" alt="Dirección">
+                                </div>
+                                <div>
+                                    Av. Lomas Verdes 791 - PB Col. Jardines de Satélite C.P. 53129 Edo. Mex.
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <img src="./assets/phone.png" alt="Teléfono">
+                                </div>
+                                <div>
+                                    <a href="tel:5545884664"><span></span> 55 45 88 46 64</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <img src="./assets/mail.png" alt="Correo electrónico">
+                                </div>
+                                <div>
+                                    <a href="mailto:jummy@jswyasociados.com"><span></span> jummy@jswyasociados.com</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <p>Copyright 2022. JSW Y ABOGADOS. Todos los derechos reservados.</p>
+                    </div>
+                    <div class="col-6 d-flex justify-content-end">
+                        <div class="icon">
+                            <a href="#"><img src="./assets/facebook.png" alt="Facebook"></a>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><img src="./assets/instagram.png" alt="Instagram"></a>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><img src="./assets/linkedin.png" alt="Linkedin"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
