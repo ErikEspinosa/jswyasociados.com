@@ -143,7 +143,7 @@ p {
 
 @media screen and (max-width: 500px) {
   .hero h1 {
-    font-size: 28px;
+    font-size: 26px;
     max-width: 100%;
   }
 }
@@ -171,6 +171,12 @@ p {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 500px) {
+  .quienes-somos h2 {
+    font-size: 26px;
+  }
 }
 
 .quienes-somos p {
@@ -230,6 +236,12 @@ p {
   margin-bottom: 2rem;
 }
 
+@media screen and (max-width: 500px) {
+  .acerca-de-nosotros h2 {
+    font-size: 26px;
+  }
+}
+
 .acerca-de-nosotros .about-cards {
   margin-bottom: 3rem;
 }
@@ -266,6 +278,12 @@ p {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 500px) {
+  .sector-publico-y-privado h2 {
+    font-size: 26px;
+  }
 }
 
 .sector-publico-y-privado .sector-cards.blue .icon {
@@ -334,6 +352,12 @@ p {
   padding-left: 1rem;
 }
 
+@media screen and (max-width: 500px) {
+  .sector-publico-y-privado .sector-card .content {
+    font-size: 16px;
+  }
+}
+
 .marketing-politico {
   padding: 4rem 0;
 }
@@ -344,6 +368,12 @@ p {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 500px) {
+  .marketing-politico h2 {
+    font-size: 26px;
+  }
 }
 
 .marketing-politico .marketing-card {
@@ -395,6 +425,12 @@ p {
   margin-bottom: 2rem;
 }
 
+@media screen and (max-width: 500px) {
+  .cursos-y-entrenamientos h2 {
+    font-size: 26px;
+  }
+}
+
 .cursos-y-entrenamientos .cursos-card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -407,6 +443,12 @@ p {
 .cursos-y-entrenamientos .cursos-card h3 {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 26px;
+}
+
+@media screen and (max-width: 500px) {
+  .cursos-y-entrenamientos .cursos-card h3 {
+    font-size: 16px;
+  }
 }
 
 .cursos-y-entrenamientos .cursos-card .icon {
@@ -450,6 +492,12 @@ p {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 500px) {
+  .footer h2 {
+    font-size: 26px;
+  }
 }
 
 .footer form {
@@ -511,7 +559,7 @@ p {
 
 @media screen and (max-width: 500px) {
   .footer .links ul {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
   }
 }
 

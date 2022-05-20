@@ -4,6 +4,14 @@
 // Mixins
 @mixin transition()
     transition: all 0.4s
+@mixin h2-title()
+    color: $accent
+    font-size: 36px
+    text-align: center
+    text-transform: uppercase
+    margin-bottom: 2rem
+    @media screen and ( max-width: $mobile )
+        font-size: 26px
 
 @mixin button()
     display: inline-block
@@ -110,7 +118,7 @@ p
         margin: 0 auto
         margin-bottom: 2rem
         @media screen and ( max-width: $mobile )
-            font-size: 28px
+            font-size: 26px
             max-width: 100%
     p
         max-width: 70%
@@ -123,11 +131,7 @@ p
 .quienes-somos
     padding: 4rem 0
     h2
-        color: $accent
-        font-size: 36px
-        text-align: center
-        text-transform: uppercase
-        margin-bottom: 2rem
+        @include h2-title()
     p
         color: $primary
     p.intro
@@ -156,11 +160,7 @@ p
 .acerca-de-nosotros
     padding: 4rem 0
     h2
-        color: $accent
-        font-size: 36px
-        text-align: center
-        text-transform: uppercase
-        margin-bottom: 2rem
+        @include h2-title()
     .about-cards
         margin-bottom: 3rem
     .buttons
@@ -180,11 +180,7 @@ p
     background-color: $gray-light
     padding: 4rem 0
     h2
-        color: $accent
-        font-size: 36px
-        text-align: center
-        text-transform: uppercase
-        margin-bottom: 2rem
+        @include h2-title()
     .sector-cards.blue
         .icon
             background-color: $primary
@@ -219,15 +215,13 @@ p
             font-size: 20px
             width: 100%
             padding-left: 1rem
+            @media screen and ( max-width: $mobile )
+                font-size: 16px
 
 .marketing-politico
     padding: 4rem 0
     h2
-        color: $accent
-        font-size: 36px
-        text-align: center
-        text-transform: uppercase
-        margin-bottom: 2rem
+        @include h2-title()
     .marketing-card
         display: flex
         margin: 1rem
@@ -251,11 +245,7 @@ p
     background-color: $gray-light
     padding: 4rem 0
     h2
-        color: $accent
-        font-size: 36px
-        text-align: center
-        text-transform: uppercase
-        margin-bottom: 2rem
+        @include h2-title()
     .cursos-card
         display: flex
         background-color: $white
@@ -264,6 +254,8 @@ p
         h3
             font-family: 'Source Sans Pro', sans-serif
             font-size: 26px
+            @media screen and ( max-width: $mobile )
+                font-size: 16px
         .icon
             display: flex
             justify-content: center
@@ -286,6 +278,8 @@ p
         text-align: center
         text-transform: uppercase
         margin-bottom: 2rem
+        @media screen and ( max-width: $mobile )
+            font-size: 26px
     form
         max-width: 60%
         margin: 0 auto
@@ -314,7 +308,7 @@ p
             margin: 0
             padding: 0
             @media screen and ( max-width: $mobile )
-                margin-bottom: 2rem
+                margin-bottom: 3rem
             li
                 display: flex
                 color: $white
