@@ -597,4 +597,18 @@ p {
 .footer .copyright .icon {
   margin: 0 1rem;
 }
+
+.alert-success {
+  background-color: #6bcb77;
+  color: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.alert-fails {
+  background-color: #ff6b6b;
+  color: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
 /*# sourceMappingURL=main.css.map */
